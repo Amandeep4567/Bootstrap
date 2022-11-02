@@ -51,10 +51,95 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
             </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            </div>
         </div>
     </nav>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to iCoder</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an iCoder Account</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirn Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -141,8 +226,8 @@
             <div class="col-md-6">
                 <div class="card flex-md-row mb-4 shadow-sm h-md-250">
                     <div class="card-body d-flex flex-column align-items-start">
-                        <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0">Global Conferences</h3>
+                        <strong class="d-inline-block mb-2 text-danger">Front-End</strong>
+                        <h3 class="mb-0">Bootstrap</h3>
                         <div class="mb-1 text-muted">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
@@ -156,8 +241,8 @@
             <div class="col-md-6">
                 <div class="card flex-md-row mb-4 shadow-sm h-md-250">
                     <div class="card-body d-flex flex-column align-items-start">
-                        <strong class="d-inline-block mb-2 text-success">Design</strong>
-                        <h3 class="mb-0">Learn Designing</h3>
+                        <strong class="d-inline-block mb-2 text-warning">Python</strong>
+                        <h3 class="mb-0">Learn Python</h3>
                         <div class="mb-1 text-muted">Nov 11</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
@@ -170,6 +255,11 @@
             </div>
         </div>
     </div>
+
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
